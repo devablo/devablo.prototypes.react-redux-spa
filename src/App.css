@@ -1,0 +1,155 @@
+.App {
+  margin: 0 auto;
+}
+.content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.heading {
+  flex: 2 0px;
+  background-color: #222;
+  height: 100px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: white;
+}
+.heading__title {
+  font-size: 1.4em;
+  display: inline;
+  padding-left: 0.8em;
+}
+.heading__logo {
+  display: inline-block;
+}
+.logo {
+  animation: logo-spin infinite 10s linear;
+  height: 60px;
+}
+
+.page {
+
+}
+.page__heading {
+  color: #d61a5e;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.loading {
+
+}
+.loading__text {
+  display: block;
+  padding: 1.5em;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.loading__logo {
+  animation: logo-spin infinite 10s linear;
+  height: 80px;
+}
+
+.nav {
+  justify-content: flex-end;
+  background-color: #222;
+}
+.nav__list {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.nav__list li {
+  background: #3fc1c0;
+}
+.nav__list a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+.nav__list a:hover {
+  background: #d61a5e;
+}
+
+@media all {
+  .nav__list {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 600px) {
+
+  .logo {
+    height: 40px;
+  }
+  .heading__title {
+    font-size: 1.1em;
+  }
+  .nav__list {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  } 
+
+  .nav__list a {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
+  }
+
+  .nav__list li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.podcast {
+  text-align: center;
+}
+.podcast::after {
+  content: "---";
+}
+.podcast__title {
+  font-weight: bolder;
+  display: block;
+  font-size: 1.2em;
+}
+.podcast__image {
+  width: 100%;
+}
+
+.nowlive{
+
+}
+.nowlive {
+  display: block;
+  font-size: 1em;
+}
+.nowlive__description {
+  display: block;
+  font-size: 1em;
+}
+.nowlive__img{
+  width: 60%;
+}
+@media all and (max-width:800px){
+  .nowlive__img{
+    width: 40%;
+  }
+}
